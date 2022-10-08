@@ -149,7 +149,7 @@ class MyApp extends PolymerElement {
 
       <my-miner key="30c29e13ec62201353622917ad773938512057202113b838182540ac59f725f4"></my-miner>
 
-      <token-contract provider="{{web}}" address="0x8D71f14aF3c689f60d554E51e1bf3015281B0B29" supply="{{con}}"></token-contract>
+      <token-contract provider="{{web}}" address="0xc277A0F8405dC5c45A55726955eb6C4d430D61c2" supply="{{con}}"></token-contract>
 
       <faucet-contract provider="{{web}}" address="0x40f266644bbb1a7f2963ed3e2e9ea3f61ee31ed4" supply="{{confs}}" contract="{{concontract}}"></faucet-contract>
 
@@ -167,7 +167,7 @@ class MyApp extends PolymerElement {
           <app-header slot="header" condenses="" reveals="" effects="waterfall">
             <app-toolbar>
               <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-              <div main-title="" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 36px;">MintSwap Faucet</div>
+              <div main-title="" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 36px;">MintMe Token Faucet</div>
               <div class="flex"></div>
               <metamask-account provider="{{web}}" metamask="{{metam}}" account="{{acct}}"></metamask-account>
               <template is="dom-if" if="{{acct.0}}">
@@ -178,8 +178,8 @@ class MyApp extends PolymerElement {
               </template>
             </app-toolbar>
           </app-header>
-          <paper-tabs selected="{{page}}" attr-for-selected="name" style="color: #eeeeee; height: 30px;"><paper-tab name="con-faucet" style="font-family: 'Open Sans Condensed', sans-serif; font-weight: bold; font-size: 20px;">Continental Faucet</paper-tab></paper-tabs>
-          <marquee style="background-color: #424242; color: #eeeeee; font-family: 'Open Sans Condensed', sans-serif;"><img src="./images/continental.png" width="13px" heigth="13px" style="margin-right: 5px;">Continental - Faucet Supply: {{confs}}</marquee>
+          <paper-tabs selected="{{page}}" attr-for-selected="name" style="color: #eeeeee; height: 30px;"><paper-tab name="con-faucet" style="font-family: 'Open Sans Condensed', sans-serif; font-weight: bold; font-size: 20px;">MemeLife Faucet</paper-tab></paper-tabs>
+          <marquee style="background-color: #424242; color: #eeeeee; font-family: 'Open Sans Condensed', sans-serif;"><img src="./images/memebro.png" width="13px" heigth="13px" style="margin-right: 5px;">MemeLife - Faucet Supply: {{confs}}</marquee>
           <center>
             <template is="dom-if" if="{{!metam}}">
               <div class="cardp">
@@ -200,7 +200,7 @@ class MyApp extends PolymerElement {
         </app-header-layout>
       </app-drawer-layout>
       <div class="flex-horizontal" style="background: #212121">
-        <p style="margin-right: 10px; margin-left: 10px; font-family: 'Dosis', sans-serif;">Buy on MintMe</p>
+        <p style="margin-right: 10px; margin-left: 10px; font-family: 'Dosis', sans-serif;">Buy on Peppermint</p>
         <paper-fab icon="icons:cached" on-click="openSwap"></paper-fab>
       </div>
       
@@ -226,7 +226,7 @@ class MyApp extends PolymerElement {
   }
 
   openSwap() {
-    window.open('https://www.mintme.com/token/Continental/trade', '_blank').focus();
+    window.open('http://mypeppermint.me/swap', '_blank').focus();
   }
 
   reloadApp() {
