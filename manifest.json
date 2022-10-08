@@ -1,6 +1,6 @@
 {
-  "name": "ContinentalFaucet",
-  "short_name": "CF",
+  "name": "MintMe Token Faucet",
+  "short_name": "MTF",
   "description": "Faucet dedicated to distributing tokens in the MintMe eco-system.",
   "icons": [
     {

@@ -57,8 +57,8 @@
  
        <div class="card flex-horizontal" style="font-family: 'Dosis', sans-serif; font-weight: bold; background-color: #9fa4a6;">
         <div class="card2 flex-vertical">
-          <img src="./images/continental.png" width="135px" height="135px">
-          <p>Continental</p>
+          <img src="./images/memebro.png" width="135px" height="135px">
+          <p>MemeLife</p>
           <paper-button style="font-size: 10px;" on-click="addToken">Add token to MetaMask</paper-button>
         </div>
          <div class="flex"></div>
@@ -72,13 +72,13 @@
            <p style="font-size: 14px;">Times Collected: {{dripcount}}</p>
            <p style="font-size: 14px;">Collection Interval: {{usertime}} minutes</p>
            <p style="font-size: 10px;">Last Collected: {{lasttime}}</p>
-           <p style="font-size: 14px;">Collection Allowance: {{userallowace}} /// Continental</p>
+           <p style="font-size: 14px;">Collection Allowance: {{userallowace}} /// MemeLife</p>
            <p style="font-size: 14px;">Collection Ready: {{isfaucetready}}</p>
          </div>
          <div class="flex"></div>
          <div class="flex-vertical">
            <img src="{{chestimg}}" width="145px" height="145px">
-           <paper-button on-click="useFaucet" raised style="margin-top: 30px; background-color: #424242; color: #eeeeee;">Collect Continental</paper-button>
+           <paper-button on-click="useFaucet" raised style="margin-top: 30px; background-color: #424242; color: #eeeeee;">Collect MemeLife</paper-button>
          </div>
        </div>
        <center>
@@ -278,8 +278,8 @@
    }
 
    async addToken() {
-    var type = "ERC20"; var symbol = "Continental"; var decimals = "12"; var image = "https://i.imgur.com/VhvOAkk.png";
-    var address = "0x8D71f14aF3c689f60d554E51e1bf3015281B0B29";
+    var type = "ERC20"; var symbol = "MemeLife"; var decimals = "12"; var image = "https://i.imgur.com/AQ2VFcc.png";
+    var address = "0xc277A0F8405dC5c45A55726955eb6C4d430D61c2";
     if (true) {
       window.ethereum
         .request({
